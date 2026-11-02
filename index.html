@@ -65,13 +65,25 @@
                 <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
             </div>
             <div class="flex items-center space-x-3">
-                <a href="https://github.com/rajendrakumar-cyber" target="_blank" class="p-2 rounded-lg bg-cybercard border border-cyberborder hover:border-sky-400 text-slate-300 hover:text-white transition">
+                <a href="https://github.com/rajendrakumar-cyber" target="_blank" class="p-2 rounded-lg bg-cybercard border border-cyberborder hover:border-sky-400 text-slate-300 hover:text-white transition" title="GitHub Profile">
                     <i class="fa-brands fa-github text-base"></i>
                 </a>
-                <a href="#contact" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-bold text-xs uppercase tracking-wider transition">
+                <a href="#contact" class="hidden sm:inline-block px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-bold text-xs uppercase tracking-wider transition">
                     Get in Touch
                 </a>
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-cybercard border border-cyberborder text-slate-300 hover:text-white" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars text-base"></i>
+                </button>
             </div>
+        </div>
+        <!-- Mobile Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-cyberborder bg-cyberbg/95 px-6 py-4 space-y-3 text-sm font-medium text-slate-300">
+            <a href="#about" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">About</a>
+            <a href="#projects" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Projects</a>
+            <a href="#skills" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Skills</a>
+            <a href="#experience" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Education</a>
+            <a href="#contact" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Contact</a>
         </div>
     </nav>
 
@@ -440,5 +452,18 @@
         <p>© 2026 Rajendrakumar M. Designed for Cybersecurity, Threat Hunting & Incident Response.</p>
     </footer>
 
+    <!-- Interactive Scripts -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.toggle('hidden');
+        }
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+        }
+    </script>
 </body>
 </html>
