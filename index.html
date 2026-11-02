@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajendrakumar M | Cybersecurity Analyst & SOC Specialist</title>
+    <meta name="description" content="Portfolio of Rajendrakumar M - Cybersecurity Analyst, SOC & SIEM Specialist, Network Forensics & VAPT Researcher.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        cyberbg: '#070b14',
+                        cybercard: '#0f172a',
+                        cyberborder: '#1e293b',
+                        cyberneon: '#38bdf8',
+                        cyberpurple: '#818cf8',
+                        cyberemerald: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #070b14; color: #f1f5f9; }
+        .glow-cyan { box-shadow: 0 0 35px -5px rgba(56, 189, 248, 0.25); }
+        .glow-card:hover { border-color: rgba(56, 189, 248, 0.5); box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.2); }
+        .gradient-text {
+            background: linear-gradient(135deg, #38bdf8 0%, #818cf8 50%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .code-pattern {
+            background-image: radial-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-sky-500 selection:text-slate-900 code-pattern">
+
+    <!-- Sticky Navigation -->
+    <nav class="sticky top-0 z-50 backdrop-blur-md bg-cyberbg/80 border-b border-cyberborder">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-2 font-mono font-bold text-lg text-white">
+                <span class="text-sky-400">&gt;_</span>
+                <span>rajendrakumar<span class="text-sky-400">.sec</span></span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-sky-400 transition">About</a>
+                <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
+                <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+                <a href="#experience" class="hover:text-sky-400 transition">Education</a>
+                <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <a href="https://github.com/rajendrakumar-cyber" target="_blank" class="p-2 rounded-lg bg-cybercard border border-cyberborder hover:border-sky-400 text-slate-300 hover:text-white transition">
+                    <i class="fa-brands fa-github text-base"></i>
+                </a>
+                <a href="#contact" class="px-4 py-2 rounded-lg bg-sky-500 hover:bg-sky-400 text-slate-900 font-bold text-xs uppercase tracking-wider transition">
+                    Get in Touch
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-6xl mx-auto px-6 pt-20 pb-16">
+        <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div class="flex-1 space-y-6 text-center lg:text-left">
+                <!-- Status Badge -->
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                    Available for SOC & Security Roles (2026)
+                </div>
+
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                    Securing Networks.<br>
+                    Hunting Threats with <span class="gradient-text">Automation & AI</span>.
+                </h1>
+
+                <p class="text-slate-400 text-base sm:text-lg max-w-2xl leading-relaxed">
+                    I am <strong class="text-slate-100">Rajendrakumar M</strong>, a Cybersecurity Analyst and SOC Specialist specializing in SIEM triage (Wazuh, Splunk), PCAP network forensics, penetration testing, and security tool automation.
+                </p>
+
+                <!-- Terminal-style Bio Card -->
+                <div class="bg-cybercard border border-cyberborder rounded-xl p-4 font-mono text-xs text-left max-w-xl mx-auto lg:mx-0 shadow-lg">
+                    <div class="flex items-center space-x-2 pb-3 border-b border-slate-800 text-slate-500">
+                        <span class="w-3 h-3 rounded-full bg-red-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-yellow-500/80 inline-block"></span>
+                        <span class="w-3 h-3 rounded-full bg-green-500/80 inline-block"></span>
+                        <span class="ml-2 text-slate-400">analyst@terminal ~ $ whoami</span>
+                    </div>
+                    <div class="pt-3 space-y-1.5 text-slate-300">
+                        <p><span class="text-sky-400">role</span>: "SOC Analyst & Network Forensics Engineer"</p>
+                        <p><span class="text-sky-400">core_stack</span>: ["Wireshark", "Scapy", "Wazuh SIEM", "Splunk", "Python", "Linux"]</p>
+                        <p><span class="text-sky-400">focus</span>: "Automating Threat Detection & Incident Triage"</p>
+                        <p><span class="text-sky-400">location</span>: "Tamil Nadu, India"</p>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-400 hover:to-indigo-400 text-slate-900 font-bold text-sm shadow-lg shadow-sky-500/20 transition flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group"></i> Explore Projects
+                    </a>
+                    <a href="https://github.com/rajendrakumar-cyber" target="_blank" class="px-6 py-3 rounded-xl bg-cybercard hover:bg-slate-800 border border-cyberborder text-slate-200 font-semibold text-sm transition flex items-center gap-2">
+                        <i class="fa-brands fa-github text-sky-400"></i> View GitHub
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Avatar / Cyber Graphic -->
+            <div class="w-72 sm:w-80 h-72 sm:h-80 rounded-3xl bg-gradient-to-br from-sky-500/20 via-indigo-500/10 to-transparent border border-sky-500/30 p-4 relative flex items-center justify-center glow-cyan">
+                <div class="w-full h-full rounded-2xl bg-cybercard border border-cyberborder flex flex-col items-center justify-center text-center p-6 space-y-4">
+                    <div class="w-20 h-20 rounded-2xl bg-sky-500/10 border border-sky-500/30 flex items-center justify-center text-3xl text-sky-400">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-white text-lg">Rajendrakumar M</h3>
+                        <p class="text-xs font-mono text-sky-400">B.Sc. Computer Science</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
+                        <span class="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">CGPA 8.2</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">Class of 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Metrics Ribbon -->
+    <section class="border-y border-cyberborder bg-cybercard/40 py-8">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div>
+                <div class="text-3xl font-extrabold text-white font-mono">100%</div>
+                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Hands-on Security Labs</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-sky-400 font-mono">200K+</div>
+                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Packets Triaged</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-indigo-400 font-mono">SIEM / XDR</div>
+                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">Wazuh & Splunk Configured</div>
+            </div>
+            <div>
+                <div class="text-3xl font-extrabold text-emerald-400 font-mono">MITRE</div>
+                <div class="text-xs text-slate-400 mt-1 uppercase tracking-wider">ATT&CK Framework Driven</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-mono font-bold text-sky-400 uppercase tracking-widest">Portfolio Showcase</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Engineered Security Solutions</h2>
+            <p class="text-slate-400 text-sm mt-3">Autonomous tools, forensics parsers, and threat hunting architectures built for real-world operations.</p>
+        </div>
+
+        <div class="space-y-12">
+
+            <!-- FLAGSHIP PROJECT: CyberScan Report / PacketCopilot -->
+            <div class="bg-gradient-to-br from-cybercard to-slate-900 border border-sky-500/40 rounded-3xl p-8 lg:p-10 relative overflow-hidden glow-cyan">
+                <div class="absolute -top-12 -right-12 w-64 h-64 bg-sky-500/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="flex flex-col lg:flex-row items-start justify-between gap-8">
+                    <div class="flex-1 space-y-4">
+                        <div class="flex flex-wrap items-center gap-2">
+                            <span class="px-3 py-1 rounded-full bg-sky-500/20 text-sky-300 font-mono text-xs font-bold border border-sky-500/30">
+                                🌟 Flagship Project
+                            </span>
+                            <span class="px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 font-mono text-xs">
+                                Python • Scapy • FastAPI
+                            </span>
+                            <span class="px-2.5 py-1 rounded-full bg-slate-800 text-slate-300 font-mono text-xs">
+                                Wireshark Display Filter Synthesizer
+                            </span>
+                        </div>
+
+                        <h3 class="text-2xl sm:text-3xl font-extrabold text-white">
+                            CyberScan Report (PacketCopilot) — AI PCAP Analyzer & Wireshark SaaS
+                        </h3>
+
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            An autonomous network forensics engine that ingests raw <code class="text-sky-300 bg-slate-950 px-1.5 py-0.5 rounded">.pcap</code> and <code class="text-sky-300 bg-slate-950 px-1.5 py-0.5 rounded">.pcapng</code> captures and produces an executive SOC incident report in under 10 seconds. Auto-detects C2 beaconing, port sweeps, and cleartext credentials, while synthesizing exact Wireshark display filters to isolate evidence immediately.
+                        </p>
+
+                        <!-- Highlights Grid -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                            <div class="bg-slate-950/60 border border-slate-800 p-3 rounded-xl flex items-start gap-2.5">
+                                <i class="fa-solid fa-radar text-sky-400 mt-1 text-sm"></i>
+                                <div>
+                                    <div class="text-xs font-bold text-white">C2 Beaconing & Jitter</div>
+                                    <div class="text-[11px] text-slate-400">Statistical interval analysis flags botnet heartbeats</div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-950/60 border border-slate-800 p-3 rounded-xl flex items-start gap-2.5">
+                                <i class="fa-solid fa-key text-amber-400 mt-1 text-sm"></i>
+                                <div>
+                                    <div class="text-xs font-bold text-white">Credential Sniffing</div>
+                                    <div class="text-[11px] text-slate-400">Catches HTTP Basic Auth and plaintext tokens</div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-950/60 border border-slate-800 p-3 rounded-xl flex items-start gap-2.5">
+                                <i class="fa-solid fa-filter text-indigo-400 mt-1 text-sm"></i>
+                                <div>
+                                    <div class="text-xs font-bold text-white">Wireshark Filter Generator</div>
+                                    <div class="text-[11px] text-slate-400">1-click copyable display filters for instant frame isolation</div>
+                                </div>
+                            </div>
+                            <div class="bg-slate-950/60 border border-slate-800 p-3 rounded-xl flex items-start gap-2.5">
+                                <i class="fa-solid fa-file-pdf text-rose-400 mt-1 text-sm"></i>
+                                <div>
+                                    <div class="text-xs font-bold text-white">Executive PDF Reports</div>
+                                    <div class="text-[11px] text-slate-400">Print-ready executive deliverables via headless Chromium</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Action Buttons -->
+                        <div class="pt-4 flex flex-wrap items-center gap-3">
+                            <a href="https://github.com/rajendrakumar-cyber/cyberscan-report" target="_blank" class="px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-900 font-bold text-xs uppercase tracking-wider transition flex items-center gap-2 shadow">
+                                <i class="fa-brands fa-github text-sm"></i> View Source on GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECONDARY PROJECTS GRID -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Project 2: SIEM Threat Detection Lab -->
+                <div class="bg-cybercard border border-cyberborder rounded-2xl p-7 flex flex-col justify-between glow-card transition">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-network-wired"></i>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400">SIEM & Log Analytics</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">SIEM & Threat Detection Lab (Wazuh & Splunk)</h4>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            Deployed Wazuh SIEM/XDR and Splunk Enterprise for centralized telemetry ingestion, custom alert rule configuration, and endpoint monitoring. Created real-time dashboards to detect brute force attempts, privilege escalations, and MITRE-mapped attacks.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Wazuh XDR</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Splunk</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">ELK Stack</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Linux Logs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Auto Recon Pentest Automation Framework -->
+                <div class="bg-cybercard border border-cyberborder rounded-2xl p-7 flex flex-col justify-between glow-card transition">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg">
+                                <i class="fa-solid fa-terminal"></i>
+                            </div>
+                            <span class="text-xs font-mono text-slate-400">Reconnaissance Tooling</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-white">Auto Recon Pentest Automation Framework</h4>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">
+                            A Bash & Python automation suite executing rapid host discovery, multi-stage port scanning, banner grabbing, and service enumeration. Automatically categorizes web assets and produces structured XML/JSON reports for VAPT engagements.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Bash</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Nmap</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">Python</span>
+                            <span class="text-[11px] font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-300">VAPT</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="border-t border-cyberborder bg-cybercard/20 py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-mono font-bold text-sky-400 uppercase tracking-widest">Core Competencies</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Technical Skills & Arsenal</h2>
+                <p class="text-slate-400 text-sm mt-3">Proficiencies honed across hands-on labs, security frameworks, and system administration.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1: SIEM & SOC -->
+                <div class="bg-cybercard border border-cyberborder rounded-2xl p-6 space-y-4 glow-card transition">
+                    <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/20 text-sky-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-tower-broadcast"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">SIEM & SOC Operations</h3>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li>• Wazuh (SIEM / XDR)</li>
+                        <li>• Splunk Enterprise & Dashboards</li>
+                        <li>• Elastic Stack (ELK)</li>
+                        <li>• Log Aggregation & Parsing</li>
+                        <li>• Alert Triage & Incident Handling</li>
+                    </ul>
+                </div>
+
+                <!-- Card 2: Security & Forensics -->
+                <div class="bg-cybercard border border-cyberborder rounded-2xl p-6 space-y-4 glow-card transition">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">Forensics & Network</h3>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li>• Wireshark & Tshark Analysis</li>
+                        <li>• Scapy Packet Manipulation</li>
+                        <li>• TCP/IP, DNS, TLS Protocols</li>
+                        <li>• C2 Beaconing & Jitter Tracking</li>
+                        <li>• Shannon Entropy & DGA Detection</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Pentesting & VAPT -->
+                <div class="bg-cybercard border border-cyberborder rounded-2xl p-6 space-y-4 glow-card transition">
+                    <div class="w-12 h-12 rounded-xl bg-rose-500/10 border border-rose-500/20 text-rose-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">VAPT & Pentesting</h3>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li>• Burp Suite Community</li>
+                        <li>• Nmap & Service Enumeration</li>
+                        <li>• Metasploit Framework</li>
+                        <li>• John the Ripper & Hashcat</li>
+                        <li>• OWASP Top 10 Web Vulnerabilities</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: OS & Scripting -->
+                <div class="bg-cybercard border border-cyberborder rounded-2xl p-6 space-y-4 glow-card transition">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="font-bold text-white text-base">Linux & Scripting</h3>
+                    <ul class="text-xs text-slate-400 space-y-2">
+                        <li>• Kali Linux & Ubuntu Server</li>
+                        <li>• Python 3 (Requests, Sockets, Scapy)</li>
+                        <li>• Bash Automation Scripting</li>
+                        <li>• Docker Containers</li>
+                        <li>• Git & Version Control</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Background -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-20">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <span class="text-xs font-mono font-bold text-sky-400 uppercase tracking-widest">Academic & Background</span>
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Education & Journey</h2>
+        </div>
+
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-cybercard border border-cyberborder rounded-2xl p-8 space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-cyberborder pb-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-white">Bachelor of Science in Computer Science (B.Sc. CS)</h3>
+                        <p class="text-sm text-sky-400 font-medium">Government Arts College, Dharmapuri, Tamil Nadu</p>
+                    </div>
+                    <div class="text-xs font-mono text-slate-400 sm:text-right">
+                        <span>Graduation: 2026</span><br>
+                        <span class="text-emerald-400 font-semibold">CGPA: 8.2 / 10.0</span>
+                    </div>
+                </div>
+                <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    Coursework focused on Computer Networks, Operating Systems, Data Structures & Algorithms, Database Management Systems, and Software Engineering. Active CTF participant with extensive personal lab setups for cybersecurity research.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="border-t border-cyberborder bg-gradient-to-b from-cybercard/30 to-cyberbg py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center space-y-8">
+            <div class="space-y-3">
+                <span class="text-xs font-mono font-bold text-sky-400 uppercase tracking-widest">Get In Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Let's Connect & Secure Systems</h2>
+                <p class="text-slate-400 text-sm max-w-lg mx-auto">
+                    I am actively seeking Junior SOC Analyst, Security Engineer, or VAPT roles. Feel free to reach out directly via email or LinkedIn!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4">
+                <!-- Email -->
+                <a href="mailto:rajendrakumarmkrk@gmail.com" class="bg-cybercard border border-cyberborder hover:border-sky-400 rounded-xl p-5 flex flex-col items-center justify-center space-y-2 glow-card transition">
+                    <i class="fa-solid fa-envelope text-sky-400 text-xl"></i>
+                    <div class="text-xs font-bold text-white">Email</div>
+                    <div class="text-[11px] text-slate-400 font-mono break-all">rajendrakumarmkrk@gmail.com</div>
+                </a>
+
+                <!-- Phone -->
+                <a href="tel:+916383285005" class="bg-cybercard border border-cyberborder hover:border-emerald-400 rounded-xl p-5 flex flex-col items-center justify-center space-y-2 glow-card transition">
+                    <i class="fa-solid fa-phone text-emerald-400 text-xl"></i>
+                    <div class="text-xs font-bold text-white">Phone</div>
+                    <div class="text-[11px] text-slate-400 font-mono">+91 63832 85005</div>
+                </a>
+
+                <!-- GitHub -->
+                <a href="https://github.com/rajendrakumar-cyber" target="_blank" class="bg-cybercard border border-cyberborder hover:border-indigo-400 rounded-xl p-5 flex flex-col items-center justify-center space-y-2 glow-card transition">
+                    <i class="fa-brands fa-github text-indigo-400 text-xl"></i>
+                    <div class="text-xs font-bold text-white">GitHub</div>
+                    <div class="text-[11px] text-slate-400 font-mono">@rajendrakumar-cyber</div>
+                </a>
+            </div>
+
+            <div class="pt-8">
+                <a href="mailto:rajendrakumarmkrk@gmail.com" class="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-400 hover:to-indigo-400 text-slate-900 font-bold text-sm shadow-xl shadow-sky-500/20 transition">
+                    <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-cyberborder py-8 text-center text-xs text-slate-500">
+        <p>© 2026 Rajendrakumar M. Designed for Cybersecurity, Threat Hunting & Incident Response.</p>
+    </footer>
+
+</body>
+</html>
