@@ -61,6 +61,7 @@
                 <a href="#about" class="hover:text-sky-400 transition">About</a>
                 <a href="#projects" class="hover:text-sky-400 transition">Projects</a>
                 <a href="#skills" class="hover:text-sky-400 transition">Skills</a>
+                <a href="#disclosures" class="hover:text-sky-400 transition">Disclosures</a>
                 <a href="#experience" class="hover:text-sky-400 transition">Education</a>
                 <a href="#contact" class="hover:text-sky-400 transition">Contact</a>
             </div>
@@ -82,6 +83,7 @@
             <a href="#about" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">About</a>
             <a href="#projects" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Projects</a>
             <a href="#skills" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Skills</a>
+            <a href="#disclosures" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Disclosures</a>
             <a href="#experience" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Education</a>
             <a href="#contact" class="block hover:text-sky-400 py-1 transition" onclick="toggleMobileMenu()">Contact</a>
         </div>
@@ -123,12 +125,15 @@
                 </div>
 
                 <!-- CTA Buttons -->
-                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-2">
-                    <a href="#projects" class="px-6 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-400 hover:to-indigo-400 text-slate-900 font-bold text-sm shadow-lg shadow-sky-500/20 transition flex items-center gap-2">
-                        <i class="fa-solid fa-layer-group"></i> Explore Projects
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2">
+                    <a href="downloads/Rajendrakumar_M_Cybersecurity_Resume.pdf" download class="px-5 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-bold text-sm shadow-lg shadow-emerald-500/20 transition flex items-center gap-2">
+                        <i class="fa-solid fa-file-arrow-down text-base"></i> Download Resume (PDF)
                     </a>
-                    <a href="https://github.com/rajendrakumar-cyber" target="_blank" class="px-6 py-3 rounded-xl bg-cybercard hover:bg-slate-800 border border-cyberborder text-slate-200 font-semibold text-sm transition flex items-center gap-2">
-                        <i class="fa-brands fa-github text-sky-400"></i> View GitHub
+                    <a href="#projects" class="px-5 py-3 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-500 hover:from-sky-400 hover:to-indigo-400 text-slate-900 font-bold text-sm shadow-lg shadow-sky-500/20 transition flex items-center gap-2">
+                        <i class="fa-solid fa-layer-group"></i> Projects
+                    </a>
+                    <a href="https://github.com/rajendrakumar-cyber" target="_blank" class="px-5 py-3 rounded-xl bg-cybercard hover:bg-slate-800 border border-cyberborder text-slate-200 font-semibold text-sm transition flex items-center gap-2">
+                        <i class="fa-brands fa-github text-sky-400"></i> GitHub
                     </a>
                 </div>
             </div>
@@ -144,7 +149,7 @@
                         <p class="text-xs font-mono text-sky-400">B.Sc. Computer Science</p>
                     </div>
                     <div class="flex items-center gap-2 text-xs font-mono text-slate-400">
-                        <span class="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">CGPA 8.2</span>
+                        <span class="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">CGPA 7.2</span>
                         <span class="px-2 py-0.5 rounded bg-slate-800 border border-slate-700">Class of 2026</span>
                     </div>
                 </div>
@@ -516,16 +521,79 @@
                     <h3 class="font-bold text-white text-base">Linux & Development</h3>
                     <ul class="text-xs text-slate-400 space-y-2">
                         <li>• Kali Linux & Ubuntu Server</li>
-                        <li>• Java 17 (Montoya SDK & Maven)</li>
                         <li>• Python 3 (FastAPI, Scapy, Requests)</li>
-                        <li>• Bash Automation Scripting</li>
-                        <li>• Git & Version Control</li>
-                    </ul>
+                        <li>• Bash Automation & Linux Pipelines</li>
                         <li>• Docker Containers</li>
                         <li>• Git & Version Control</li>
                     </ul>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Research & Vulnerability Disclosures -->
+    <section id="disclosures" class="border-t border-cyberborder bg-cybercard/10 py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">Responsible Disclosure & Research</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Vulnerability Disclosures</h2>
+                <p class="text-slate-400 text-sm mt-3">Contributing to defense and open-source infrastructure through verified vulnerability discovery, reporting, and responsible remediation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- DoD VDP Resolved Card -->
+                <div class="bg-gradient-to-br from-cybercard to-slate-900 border border-emerald-500/40 rounded-2xl p-6 sm:p-8 space-y-4 glow-card transition relative overflow-hidden">
+                    <div class="flex items-center justify-between gap-2 border-b border-cyberborder pb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-emerald-400 font-semibold uppercase tracking-wider">HackerOne • DoD VDP</span>
+                                <h3 class="text-lg font-bold text-white">U.S. Department of Defense</h3>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">RESOLVED</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-sm font-semibold text-white">Cleartext NTLM Auth & AD CS Web Enrollment (Report #4195935)</div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Identified and responsibly disclosed CWE-319 (Cleartext Transmission of Sensitive Information) on <code class="text-sky-400">crl.darpa.mil</code>. Flagged unencrypted HTTP exposure of Active Directory Certificate Services (AD CS) vulnerable to NTLM relay (ESC8) domain privilege escalation. Verified, remediated, and marked <strong class="text-emerald-400">Resolved</strong> by the DoD security team.
+                        </p>
+                    </div>
+                    <div class="pt-2 flex flex-wrap items-center gap-2 text-[11px] font-mono text-slate-400">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-sky-300">CVSS 5.3 (Medium)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-emerald-300">+7 Reputation</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-slate-300">DARPA Asset</span>
+                    </div>
+                </div>
+
+                <!-- Patchstack Community VDP Card -->
+                <div class="bg-gradient-to-br from-cybercard to-slate-900 border border-cyberborder rounded-2xl p-6 sm:p-8 space-y-4 glow-card transition relative overflow-hidden">
+                    <div class="flex items-center justify-between gap-2 border-b border-cyberborder pb-4">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-sky-500/10 border border-sky-500/30 text-sky-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-cube"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-mono text-sky-400 font-semibold uppercase tracking-wider">Patchstack Community VDP</span>
+                                <h3 class="text-lg font-bold text-white">WordPress Plugin Security</h3>
+                            </div>
+                        </div>
+                        <span class="px-3 py-1 rounded-full text-xs font-mono font-bold bg-sky-500/10 text-sky-400 border border-sky-500/30">SUBMITTED</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="text-sm font-semibold text-white">CSRF & Arbitrary Option Modification (2,000+ Active Installs)</div>
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Identified CWE-352 in <code class="text-sky-400">woo-pdf-invoice-builder</code> allowing cross-origin manipulation of sequential store invoice numbering and arbitrary WordPress options without CSRF nonce verification. Responsible disclosure submitted to Patchstack.
+                        </p>
+                    </div>
+                    <div class="pt-2 flex flex-wrap items-center gap-2 text-[11px] font-mono text-slate-400">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-sky-300">CVSS 4.3 (Medium)</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-800 border border-slate-700 text-purple-300">WooCommerce Ecosystem</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -546,7 +614,7 @@
                     </div>
                     <div class="text-xs font-mono text-slate-400 sm:text-right">
                         <span>Graduation: 2026</span><br>
-                        <span class="text-emerald-400 font-semibold">CGPA: 8.2 / 10.0</span>
+                        <span class="text-emerald-400 font-semibold">CGPA: 7.2 / 10.0</span>
                     </div>
                 </div>
                 <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
